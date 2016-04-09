@@ -1,20 +1,20 @@
-#include "stdafx.h"
+п»ї#include "stdafx.h"
 #include "My2DObjectB11.h"
 
 /**********************************************************
 * bool CMy2DObjectB11::IsInTriangle(const CMy2DPoint& P1, const CMy2DPoint& P2, const CMy2DPoint& P3, const CMy2DPoint& PTest)
 *
-*   Функция проверяет точку на принадлежность треугольнику
+*   Р¤СѓРЅРєС†РёСЏ РїСЂРѕРІРµСЂСЏРµС‚ С‚РѕС‡РєСѓ РЅР° РїСЂРёРЅР°РґР»РµР¶РЅРѕСЃС‚СЊ С‚СЂРµСѓРіРѕР»СЊРЅРёРєСѓ
 *
-* Вход:
-*   const CMy2DPoint& P1 - вершина треугольника
-*   const CMy2DPoint& P1 - вершина треугольника
-*   const CMy2DPoint& P1 - вершина треугольника
-*   const CMy2DPoint& PTest - проверяемая точка
+* Р’С…РѕРґ:
+*   const CMy2DPoint& P1 - РІРµСЂС€РёРЅР° С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°
+*   const CMy2DPoint& P1 - РІРµСЂС€РёРЅР° С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°
+*   const CMy2DPoint& P1 - РІРµСЂС€РёРЅР° С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°
+*   const CMy2DPoint& PTest - РїСЂРѕРІРµСЂСЏРµРјР°СЏ С‚РѕС‡РєР°
 *
-* Возвращаемое значение:
-*   true - принадлежит фигуре
-*   false - не принадлежит фигуре
+* Р’РѕР·РІСЂР°С‰Р°РµРјРѕРµ Р·РЅР°С‡РµРЅРёРµ:
+*   true - РїСЂРёРЅР°РґР»РµР¶РёС‚ С„РёРіСѓСЂРµ
+*   false - РЅРµ РїСЂРёРЅР°РґР»РµР¶РёС‚ С„РёРіСѓСЂРµ
 **********************************************************/
 bool CMy2DObjectB11::IsInTriangle(const CMy2DPoint& P1, const CMy2DPoint& P2, const CMy2DPoint& P3, const CMy2DPoint& PTest) {
     double a = (P1.GetX() - PTest.GetX()) * (P2.GetY() - P1.GetY()) - (P2.GetX() - P1.GetX()) * (P1.GetY() - PTest.GetY());
@@ -44,15 +44,15 @@ void CMy2DObjectB11::SetCenter(const CMy2DPoint& center) { this->m_center = cent
 /**********************************************************
 * void CMy2DObjectB11::Move(double dX, double dY, double dAngle)
 *
-*   Функция смещает объект на вектор dX, dY и поворачивает на dAngle
+*   Р¤СѓРЅРєС†РёСЏ СЃРјРµС‰Р°РµС‚ РѕР±СЉРµРєС‚ РЅР° РІРµРєС‚РѕСЂ dX, dY Рё РїРѕРІРѕСЂР°С‡РёРІР°РµС‚ РЅР° dAngle
 *
-* Вход:
-*   double dx - координата х
-*   double dy - координата у
-*   double dAngle - угол
+* Р’С…РѕРґ:
+*   double dx - РєРѕРѕСЂРґРёРЅР°С‚Р° С…
+*   double dy - РєРѕРѕСЂРґРёРЅР°С‚Р° Сѓ
+*   double dAngle - СѓРіРѕР»
 *
-* Возвращаемое значение:
-*   нет
+* Р’РѕР·РІСЂР°С‰Р°РµРјРѕРµ Р·РЅР°С‡РµРЅРёРµ:
+*   РЅРµС‚
 **********************************************************/
 void CMy2DObjectB11::Move(double dX, double dY, double dAngle) {
     this->Move(CMy2DPoint(dX, dY), dAngle);
@@ -61,14 +61,14 @@ void CMy2DObjectB11::Move(double dX, double dY, double dAngle) {
 /**********************************************************
 * void CMy2DObjectB11::Move(const CMy2DPoint& delta, double dAngle)
 *
-*   Функция смещает объект на вектор delta и поворачивает на dAngle
+*   Р¤СѓРЅРєС†РёСЏ СЃРјРµС‰Р°РµС‚ РѕР±СЉРµРєС‚ РЅР° РІРµРєС‚РѕСЂ delta Рё РїРѕРІРѕСЂР°С‡РёРІР°РµС‚ РЅР° dAngle
 *
-* Вход:
-*   CMy2DPoint& delta - ссылка на переменную типа CMy2DPoint
-*   double dAngle - угол
+* Р’С…РѕРґ:
+*   CMy2DPoint& delta - СЃСЃС‹Р»РєР° РЅР° РїРµСЂРµРјРµРЅРЅСѓСЋ С‚РёРїР° CMy2DPoint
+*   double dAngle - СѓРіРѕР»
 *
-* Возвращаемое значение:
-*   нет
+* Р’РѕР·РІСЂР°С‰Р°РµРјРѕРµ Р·РЅР°С‡РµРЅРёРµ:
+*   РЅРµС‚
 **********************************************************/
 void CMy2DObjectB11::Move(const CMy2DPoint& delta, double dAngle) {
     this->m_center = this->m_center + delta;
@@ -78,13 +78,13 @@ void CMy2DObjectB11::Move(const CMy2DPoint& delta, double dAngle) {
 /**********************************************************
 * void CMy2DObjectB11::Rotate(double dAngle)
 *
-*   Функция поворачивает фигуру на dAngle
+*   Р¤СѓРЅРєС†РёСЏ РїРѕРІРѕСЂР°С‡РёРІР°РµС‚ С„РёРіСѓСЂСѓ РЅР° dAngle
 *
-* Вход:
-*   double dAngle - угол
+* Р’С…РѕРґ:
+*   double dAngle - СѓРіРѕР»
 *
-* Возвращаемое значение:
-*   нет
+* Р’РѕР·РІСЂР°С‰Р°РµРјРѕРµ Р·РЅР°С‡РµРЅРёРµ:
+*   РЅРµС‚
 **********************************************************/
 void CMy2DObjectB11::Rotate(double dAngle) {
     this->m_dAngle += dAngle;
@@ -93,14 +93,14 @@ void CMy2DObjectB11::Rotate(double dAngle) {
 /**********************************************************
 * bool CMy2DObjectB11::IsInside(const CMy2DPoint& point) const
 *
-*   Функция проверяет точку на принадлежность фигуре
+*   Р¤СѓРЅРєС†РёСЏ РїСЂРѕРІРµСЂСЏРµС‚ С‚РѕС‡РєСѓ РЅР° РїСЂРёРЅР°РґР»РµР¶РЅРѕСЃС‚СЊ С„РёРіСѓСЂРµ
 *
-* Вход:
-*   CMy2DPoint& point - ссылка на переменную типа CMy2DPoint
+* Р’С…РѕРґ:
+*   CMy2DPoint& point - СЃСЃС‹Р»РєР° РЅР° РїРµСЂРµРјРµРЅРЅСѓСЋ С‚РёРїР° CMy2DPoint
 *
-* Возвращаемое значение:
-*   true - принадлежит фигуре
-*   false - не принадлежит фигуре
+* Р’РѕР·РІСЂР°С‰Р°РµРјРѕРµ Р·РЅР°С‡РµРЅРёРµ:
+*   true - РїСЂРёРЅР°РґР»РµР¶РёС‚ С„РёРіСѓСЂРµ
+*   false - РЅРµ РїСЂРёРЅР°РґР»РµР¶РёС‚ С„РёРіСѓСЂРµ
 **********************************************************/
 bool CMy2DObjectB11::IsInside(const CMy2DPoint& point) const {
     return this->IsInside(point.GetX(), point.GetY());
@@ -109,41 +109,41 @@ bool CMy2DObjectB11::IsInside(const CMy2DPoint& point) const {
 /**********************************************************
 * bool CMy2DObjectB11::IsInside(double x, double y) const
 *
-*   Функция проверяет точку на принадлежность фигуре
+*   Р¤СѓРЅРєС†РёСЏ РїСЂРѕРІРµСЂСЏРµС‚ С‚РѕС‡РєСѓ РЅР° РїСЂРёРЅР°РґР»РµР¶РЅРѕСЃС‚СЊ С„РёРіСѓСЂРµ
 *
-* Вход:
-*   double dx - координата х
-*   double dy - координата у
+* Р’С…РѕРґ:
+*   double dx - РєРѕРѕСЂРґРёРЅР°С‚Р° С…
+*   double dy - РєРѕРѕСЂРґРёРЅР°С‚Р° Сѓ
 *   
-* Возвращаемое значение:
-*   true - принадлежит фигуре
-*   false - не принадлежит фигуре
+* Р’РѕР·РІСЂР°С‰Р°РµРјРѕРµ Р·РЅР°С‡РµРЅРёРµ:
+*   true - РїСЂРёРЅР°РґР»РµР¶РёС‚ С„РёРіСѓСЂРµ
+*   false - РЅРµ РїСЂРёРЅР°РґР»РµР¶РёС‚ С„РёРіСѓСЂРµ
 **********************************************************/
 bool CMy2DObjectB11::IsInside(double x, double y) const{
     double new_x, new_y;
-    // перенос
+    // РїРµСЂРµРЅРѕСЃ
     x -= this->m_center.GetX();
     y -= this->m_center.GetY();
-    // поворот
+    // РїРѕРІРѕСЂРѕС‚
     new_x = x * cos(this->m_dAngle) + y * sin(this->m_dAngle);
     new_y = -x * sin(this->m_dAngle) + y * cos(this->m_dAngle);
 
-    // проверка на выход за границы фигуры по оси X
+    // РїСЂРѕРІРµСЂРєР° РЅР° РІС‹С…РѕРґ Р·Р° РіСЂР°РЅРёС†С‹ С„РёРіСѓСЂС‹ РїРѕ РѕСЃРё X
     if (new_x > (this->A / 2) || new_x < -(this->A / 2)) {
         return false;
     }
-    // проверка на выход за границы фигуры по оси Y
+    // РїСЂРѕРІРµСЂРєР° РЅР° РІС‹С…РѕРґ Р·Р° РіСЂР°РЅРёС†С‹ С„РёРіСѓСЂС‹ РїРѕ РѕСЃРё Y
     if (new_y >(this->A / 2) || new_y < -(this->A / 2)) {
         return false;
     }
 
-    // проверка на выход за прямоугольник A1
+    // РїСЂРѕРІРµСЂРєР° РЅР° РІС‹С…РѕРґ Р·Р° РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє A1
     if ((new_x > this->A / 2 - this->A1) &&
         (-this->A1 / 2 < new_y) && (new_y < this->A1 / 2)) {
         return false;
     }
     
-    // проверка на выход за треугольник A2
+    // РїСЂРѕРІРµСЂРєР° РЅР° РІС‹С…РѕРґ Р·Р° С‚СЂРµСѓРіРѕР»СЊРЅРёРє A2
     bool isInA2Square =
         (-this->A / 2 <= new_x && new_x <= -this->A / 2 + this->A2) &&
         (this->A / 2 - this->A2 <= new_y && new_y <= this->A / 2);
@@ -158,7 +158,7 @@ bool CMy2DObjectB11::IsInside(double x, double y) const{
         }
     }
     
-    // проверка на выход за треугольник A3
+    // РїСЂРѕРІРµСЂРєР° РЅР° РІС‹С…РѕРґ Р·Р° С‚СЂРµСѓРіРѕР»СЊРЅРёРє A3
     bool isInA3Square =
         (-this->A / 2 <= new_x && new_x <= -this->A / 2 + this->A3) &&
         (-this->A / 2 <= new_y && new_y <= -this->A / 2 + this->A3 );
@@ -173,7 +173,7 @@ bool CMy2DObjectB11::IsInside(double x, double y) const{
         }
     }
 
-    // все проверки прошли успешно, точка внутри фигуры.
+    // РІСЃРµ РїСЂРѕРІРµСЂРєРё РїСЂРѕС€Р»Рё СѓСЃРїРµС€РЅРѕ, С‚РѕС‡РєР° РІРЅСѓС‚СЂРё С„РёРіСѓСЂС‹.
     return true;
 }
 

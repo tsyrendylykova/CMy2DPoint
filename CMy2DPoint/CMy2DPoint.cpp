@@ -1,12 +1,12 @@
-/* Цырендылыкова Э.Ц. БПМ-142, Курсовая работа, вариант 11(Б) */
+п»ї/* Р¦С‹СЂРµРЅРґС‹Р»С‹РєРѕРІР° Р­.Р¦. Р‘РџРњ-142, РљСѓСЂСЃРѕРІР°СЏ СЂР°Р±РѕС‚Р°, РІР°СЂРёР°РЅС‚ 11(Р‘) */
 
 /****************************************************************************
-* Задание:
-* 1. Написать класс CMy2DPoint, описывающий точку на плоскости.
-* 2. Написать класс CMy2DObjectНомерВарианта, описывающий геометрическую фигуру,
-* соответствующую варианту задания.
-* 3. Продемонстрировать работоспособность разработанных классов с помощью 
-* небольшой консольной программы.
+* Р—Р°РґР°РЅРёРµ:
+* 1. РќР°РїРёСЃР°С‚СЊ РєР»Р°СЃСЃ CMy2DPoint, РѕРїРёСЃС‹РІР°СЋС‰РёР№ С‚РѕС‡РєСѓ РЅР° РїР»РѕСЃРєРѕСЃС‚Рё.
+* 2. РќР°РїРёСЃР°С‚СЊ РєР»Р°СЃСЃ CMy2DObjectРќРѕРјРµСЂР’Р°СЂРёР°РЅС‚Р°, РѕРїРёСЃС‹РІР°СЋС‰РёР№ РіРµРѕРјРµС‚СЂРёС‡РµСЃРєСѓСЋ С„РёРіСѓСЂСѓ,
+* СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰СѓСЋ РІР°СЂРёР°РЅС‚Сѓ Р·Р°РґР°РЅРёСЏ.
+* 3. РџСЂРѕРґРµРјРѕРЅСЃС‚СЂРёСЂРѕРІР°С‚СЊ СЂР°Р±РѕС‚РѕСЃРїРѕСЃРѕР±РЅРѕСЃС‚СЊ СЂР°Р·СЂР°Р±РѕС‚Р°РЅРЅС‹С… РєР»Р°СЃСЃРѕРІ СЃ РїРѕРјРѕС‰СЊСЋ 
+* РЅРµР±РѕР»СЊС€РѕР№ РєРѕРЅСЃРѕР»СЊРЅРѕР№ РїСЂРѕРіСЂР°РјРјС‹.
 *****************************************************************************/
 
 #include "stdafx.h"
@@ -31,16 +31,16 @@ int main() {
     CMy2DObjectB11 figure, new_figure;
 
     cout << setfill('*') << setw(80) << " " << endl;
-    cout << "Цырендылыкова Эржена, БПМ - 142\n" << endl;
+    cout << "Р¦С‹СЂРµРЅРґС‹Р»С‹РєРѕРІР° Р­СЂР¶РµРЅР°, Р‘РџРњ - 142\n" << endl;
     cout << setfill('*') << setw(80) << " " << endl;
-    cout << "Вариант № 11 (B)\n" << endl;
+    cout << "Р’Р°СЂРёР°РЅС‚ в„– 11 (B)\n" << endl;
     cout << setfill('*') << setw(80) << " " << endl;
-    cout << "Задание:" << endl;
-    cout << "1. Написать класс CMy2DPoint, описывающий точку на плоскости.\n"
-        "2. Написать класс CMy2DObjectB11, описывающий геометрическую фигуру,\n"
-        "соответствующую варианту задания.\n"
-        "3. Продемонстрировать работоспособность разработанных классов с помощью\n"
-        "небольшой консольной программы." << endl;
+    cout << "Р—Р°РґР°РЅРёРµ:" << endl;
+    cout << "1. РќР°РїРёСЃР°С‚СЊ РєР»Р°СЃСЃ CMy2DPoint, РѕРїРёСЃС‹РІР°СЋС‰РёР№ С‚РѕС‡РєСѓ РЅР° РїР»РѕСЃРєРѕСЃС‚Рё.\n"
+        "2. РќР°РїРёСЃР°С‚СЊ РєР»Р°СЃСЃ CMy2DObjectB11, РѕРїРёСЃС‹РІР°СЋС‰РёР№ РіРµРѕРјРµС‚СЂРёС‡РµСЃРєСѓСЋ С„РёРіСѓСЂСѓ,\n"
+        "СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰СѓСЋ РІР°СЂРёР°РЅС‚Сѓ Р·Р°РґР°РЅРёСЏ.\n"
+        "3. РџСЂРѕРґРµРјРѕРЅСЃС‚СЂРёСЂРѕРІР°С‚СЊ СЂР°Р±РѕС‚РѕСЃРїРѕСЃРѕР±РЅРѕСЃС‚СЊ СЂР°Р·СЂР°Р±РѕС‚Р°РЅРЅС‹С… РєР»Р°СЃСЃРѕРІ СЃ РїРѕРјРѕС‰СЊСЋ\n"
+        "РЅРµР±РѕР»СЊС€РѕР№ РєРѕРЅСЃРѕР»СЊРЅРѕР№ РїСЂРѕРіСЂР°РјРјС‹." << endl;
     cout << setfill('*') << setw(80) << " " << endl;
 #if DEBUG
     figure.SetA(6);
@@ -51,44 +51,44 @@ int main() {
     cout << "A1 = " << figure.GetA1() << endl;
     cout << "A2 = " << figure.GetA2() << endl;
     cout << "A3 = " << figure.GetA3() << endl;
-    cout << "\nФигура с центром в точке(0,0)" << endl << endl;
-    cout << "(-2.5, 2.5): должно быть false - " << (figure.IsInside(-2.5, 2.5) ? "true" : "false") << endl;
-    cout << "(1, 1):      должно быть false - " << (figure.IsInside(1, 1) ? "true" : "false") << endl;
-    cout << "(-2.7, 2.7): должно быть false - " << (figure.IsInside(-2.7, -2.7) ? "true" : "false") << endl;
-    cout << "(-2, -2):    должно быть true - " << (figure.IsInside(-2, -2) ? "true" : "false") << endl;
-    cout << "(1, 2):      должно быть true - " << (figure.IsInside(1, 2) ? "true" : "false") << endl;
-    cout << "(-2.2, 1.2): должно быть true - " << (figure.IsInside(-2.2, 1.2) ? "true" : "false") << endl;
-    cout << "(0, 0):      должно быть true - " << (figure.IsInside(0, 0) ? "true" : "false") << endl;
+    cout << "\nР¤РёРіСѓСЂР° СЃ С†РµРЅС‚СЂРѕРј РІ С‚РѕС‡РєРµ(0,0)" << endl << endl;
+    cout << "(-2.5, 2.5): РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ false - " << (figure.IsInside(-2.5, 2.5) ? "true" : "false") << endl;
+    cout << "(1, 1):      РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ false - " << (figure.IsInside(1, 1) ? "true" : "false") << endl;
+    cout << "(-2.7, 2.7): РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ false - " << (figure.IsInside(-2.7, -2.7) ? "true" : "false") << endl;
+    cout << "(-2, -2):    РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ true - " << (figure.IsInside(-2, -2) ? "true" : "false") << endl;
+    cout << "(1, 2):      РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ true - " << (figure.IsInside(1, 2) ? "true" : "false") << endl;
+    cout << "(-2.2, 1.2): РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ true - " << (figure.IsInside(-2.2, 1.2) ? "true" : "false") << endl;
+    cout << "(0, 0):      РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ true - " << (figure.IsInside(0, 0) ? "true" : "false") << endl;
 
     cout << setfill('_') << setw(80) << " " << endl;
     my_center.SetX(2);
     my_center.SetY(1);
     figure.SetCenter(my_center);
     cout << endl;
-    cout << "Фигура с центром в точке(2,1)" << endl << endl;
-    cout << "(-1, -2):    должно быть false - " << (figure.IsInside(-1, -2) ? "true" : "false") << endl;
-    cout << "(-1, 5):     должно быть false - " << (figure.IsInside(-1, 5) ? "true" : "false") << endl;
-    cout << "(5, 1):      должно быть false - " << (figure.IsInside(5, 1) ? "true" : "false") << endl;
+    cout << "Р¤РёРіСѓСЂР° СЃ С†РµРЅС‚СЂРѕРј РІ С‚РѕС‡РєРµ(2,1)" << endl << endl;
+    cout << "(-1, -2):    РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ false - " << (figure.IsInside(-1, -2) ? "true" : "false") << endl;
+    cout << "(-1, 5):     РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ false - " << (figure.IsInside(-1, 5) ? "true" : "false") << endl;
+    cout << "(5, 1):      РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ false - " << (figure.IsInside(5, 1) ? "true" : "false") << endl;
                              
-    cout << "(0.5, 4):    должно быть false - " << (figure.IsInside(0.5, 4) ? "true" : "false") << endl;
-    cout << "(5, 0):      должно быть false - " << (figure.IsInside(5, 0) ? "true" : "false") << endl;
-    cout << "(1.5, 2.5):  должно быть true - " << (figure.IsInside(1.5, 2.5) ? "true" : "false") << endl;
-    cout << "(-0.5, -0.7):должно быть true - " << (figure.IsInside(-0.5, -0.7) ? "true" : "false") << endl;
-    cout << "(3, 3):      должно быть true - " << (figure.IsInside(3, 3) ? "true" : "false") << endl;
-    cout << "(2, -1):     должно быть true - " << (figure.IsInside(2, -1) ? "true" : "false") << endl;
+    cout << "(0.5, 4):    РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ false - " << (figure.IsInside(0.5, 4) ? "true" : "false") << endl;
+    cout << "(5, 0):      РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ false - " << (figure.IsInside(5, 0) ? "true" : "false") << endl;
+    cout << "(1.5, 2.5):  РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ true - " << (figure.IsInside(1.5, 2.5) ? "true" : "false") << endl;
+    cout << "(-0.5, -0.7):РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ true - " << (figure.IsInside(-0.5, -0.7) ? "true" : "false") << endl;
+    cout << "(3, 3):      РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ true - " << (figure.IsInside(3, 3) ? "true" : "false") << endl;
+    cout << "(2, -1):     РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ true - " << (figure.IsInside(2, -1) ? "true" : "false") << endl;
 
     cout << setfill('_') << setw(80) << " " << endl;
     figure.Rotate(M_PI / 2);
     cout << endl;
-    cout << "Поворот на pi/2" << endl << endl;
+    cout << "РџРѕРІРѕСЂРѕС‚ РЅР° pi/2" << endl << endl;
 
-    cout << "(0, 2.5):    должно быть true - " << (figure.IsInside(0, 2.5) ? "true" : "false") << endl;
-    cout << "(2.5, 0):    должно быть true - " << (figure.IsInside(2.5, 0) ? "true" : "false") << endl;
-    cout << "(2 ,2):      должно быть false - " << (figure.IsInside(2, 2) ? "true" : "false") << endl;
-    cout << "(-0.5, -1.5):должно быть false - " << (figure.IsInside(-0.5, -1.5) ? "true" : "false") << endl;
+    cout << "(0, 2.5):    РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ true - " << (figure.IsInside(0, 2.5) ? "true" : "false") << endl;
+    cout << "(2.5, 0):    РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ true - " << (figure.IsInside(2.5, 0) ? "true" : "false") << endl;
+    cout << "(2 ,2):      РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ false - " << (figure.IsInside(2, 2) ? "true" : "false") << endl;
+    cout << "(-0.5, -1.5):РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ false - " << (figure.IsInside(-0.5, -1.5) ? "true" : "false") << endl;
 
     cout << setfill('_') << setw(80) << " " << endl;
-    cout << "Создаем новую фигуру с координатами:" << endl;
+    cout << "РЎРѕР·РґР°РµРј РЅРѕРІСѓСЋ С„РёРіСѓСЂСѓ СЃ РєРѕРѕСЂРґРёРЅР°С‚Р°РјРё:" << endl;
     new_figure.SetA(3);
     new_figure.SetA1(1);
     new_figure.SetA2(2);
@@ -100,70 +100,70 @@ int main() {
     cout << "A3 = " << new_figure.GetA3() << endl;
     cout << endl;
 
-    cout << "(-0.5, 1): должно быть false - " << (new_figure.IsInside(-0.5, 1) ? "true" : "false") << endl;
+    cout << "(-0.5, 1): РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ false - " << (new_figure.IsInside(-0.5, 1) ? "true" : "false") << endl;
     cout << setfill('_') << setw(80) << " " << endl;
-    cout << "Поворот на pi/4" << endl;
+    cout << "РџРѕРІРѕСЂРѕС‚ РЅР° pi/4" << endl;
     new_figure.Rotate(M_PI / 4);
-    cout << "(-0.5, 1) должно быть true - " << (new_figure.IsInside(-0.5, 1) ? "true" : "false") << endl;
+    cout << "(-0.5, 1) РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ true - " << (new_figure.IsInside(-0.5, 1) ? "true" : "false") << endl;
     cout << setfill('_') << setw(80) << " " << endl;
     cout << endl << endl;
 #else
     int ans;
     double x, y, angle;
-    cout << "Введите А: ";
+    cout << "Р’РІРµРґРёС‚Рµ Рђ: ";
     cin >> x;
     figure.SetA(x);
-    cout << "Введите А1: ";
+    cout << "Р’РІРµРґРёС‚Рµ Рђ1: ";
     cin >> x;
     figure.SetA1(x);
-    cout << "Введите А2: ";
+    cout << "Р’РІРµРґРёС‚Рµ Рђ2: ";
     cin >> x;
     figure.SetA2(x);
-    cout << "Введите А3: ";
+    cout << "Р’РІРµРґРёС‚Рµ Рђ3: ";
     cin >> x;
     figure.SetA3(x);
-    cout << "Введите координату x центра: ";
+    cout << "Р’РІРµРґРёС‚Рµ РєРѕРѕСЂРґРёРЅР°С‚Сѓ x С†РµРЅС‚СЂР°: ";
     cin >> x;
     my_center.SetX(x);
-    cout << "Введите координату y центра: ";
+    cout << "Р’РІРµРґРёС‚Рµ РєРѕРѕСЂРґРёРЅР°С‚Сѓ y С†РµРЅС‚СЂР°: ";
     cin >> y;
     my_center.SetY(y);
     figure.SetCenter(my_center);
     while (flag) {
-        cout << "\nЧто вы хотите сделать?" << endl;
-        cout << "1. Повернуть фигуру.\n"
-            "2. Сместить объект и повернуть.\n"
-            "3. Проверить точку на вхождение.\n"
-            "4. Закрыть и выйти.\n";
+        cout << "\nР§С‚Рѕ РІС‹ С…РѕС‚РёС‚Рµ СЃРґРµР»Р°С‚СЊ?" << endl;
+        cout << "1. РџРѕРІРµСЂРЅСѓС‚СЊ С„РёРіСѓСЂСѓ.\n"
+            "2. РЎРјРµСЃС‚РёС‚СЊ РѕР±СЉРµРєС‚ Рё РїРѕРІРµСЂРЅСѓС‚СЊ.\n"
+            "3. РџСЂРѕРІРµСЂРёС‚СЊ С‚РѕС‡РєСѓ РЅР° РІС…РѕР¶РґРµРЅРёРµ.\n"
+            "4. Р—Р°РєСЂС‹С‚СЊ Рё РІС‹Р№С‚Рё.\n";
         cout << "> ";
         cin >> ans;
 
         switch (ans) {
         case 1:
-            cout << "Введите угол: ";
+            cout << "Р’РІРµРґРёС‚Рµ СѓРіРѕР»: ";
             cin >> angle;
             figure.Rotate(angle);
             cout << endl;
-            cout << "Угол = " << figure.GetAngle() << endl;
+            cout << "РЈРіРѕР» = " << figure.GetAngle() << endl;
             break;
         case 2:
-            cout << "Введите x1: ";
+            cout << "Р’РІРµРґРёС‚Рµ x1: ";
             cin >> x;
-            cout << "Введите y1: ";
+            cout << "Р’РІРµРґРёС‚Рµ y1: ";
             cin >> y;
             point.SetX(x);
             point.SetY(y);
-            cout << "Введите угол: ";
+            cout << "Р’РІРµРґРёС‚Рµ СѓРіРѕР»: ";
             cin >> angle;
             figure.Move(point, angle);
             cout << endl;
-            cout << "Новые координаты центра: " << figure.GetCenter() << endl;
-            cout << "Новый угол: " << figure.GetAngle() << endl;
+            cout << "РќРѕРІС‹Рµ РєРѕРѕСЂРґРёРЅР°С‚С‹ С†РµРЅС‚СЂР°: " << figure.GetCenter() << endl;
+            cout << "РќРѕРІС‹Р№ СѓРіРѕР»: " << figure.GetAngle() << endl;
             break;
         case 3:
-            cout << "Введите координату x: ";
+            cout << "Р’РІРµРґРёС‚Рµ РєРѕРѕСЂРґРёРЅР°С‚Сѓ x: ";
             cin >> x;
-            cout << "Введите координату y: ";
+            cout << "Р’РІРµРґРёС‚Рµ РєРѕРѕСЂРґРёРЅР°С‚Сѓ y: ";
             cin >> y;
             point.SetX(x);
             point.SetY(y);
