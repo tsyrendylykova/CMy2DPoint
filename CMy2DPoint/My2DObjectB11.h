@@ -49,6 +49,7 @@ class CMy2DObjectB11 {
 public:
     CMy2DObjectB11() : CMy2DObjectB11(0, 0, 0, 0, 0, 0, 0) { 
     }
+
     CMy2DObjectB11(double centerX, double centerY, double A, double A1, double A2, double A3, double Angle) : m_center(centerX, centerY) {
         this->A = A;
         this->A1 = A1;
